@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -10,47 +11,61 @@
 </head>
 <body>
 
-    <main id="crt-screen" class="crt-screen">
+<main id="crt-screen" class="crt-screen">
 
-        <div class="crt-glow"></div>
-        <div class="crt-scanlines"></div>
-        <div class="crt-noise"></div>
-        <div class="crt-vignette"></div>
+```
+<div class="crt-glow"></div>
+<div class="crt-scanlines"></div>
+<div class="crt-noise"></div>
+<div class="crt-vignette"></div>
 
-        <section class="screen-content">
+<header class="crt-header">
 
-            <header class="screen-header">
-                <div class="system-id">-3xØc3t-</div>
-                <div class="system-title">CRT SCREEN / SUBIMINAL</div>
-                <div class="system-status">SYSTEM ONLINE</div>
-            </header>
+    <div class="header-block header-brand">
+        <img src="medias/3x0c3t_LOGO.png" alt="3x0c3t" class="header-logo">
+        <span class="header-brand-text">-3xØc3t-</span>
+    </div>
 
-            <section class="screen-center">
-                <div id="main-message" class="main-message">
-                    <span>INITIALIZING</span>
-                </div>
+    <div class="header-block header-title">
+        <span>CRT SCREEN / SUBIMINAL</span>
+    </div>
 
-                <div id="sub-message" class="sub-message">
-                    DIGITAL SIGNAL ACTIVE
-                </div>
+    <div class="header-block header-status">
+        <span class="status-label">SYSTEM ONLINE</span>
+    </div>
 
-                <div class="signal-frame">
-                    <div class="signal-line"></div>
-                    <div class="signal-line"></div>
-                    <div class="signal-line"></div>
-                </div>
-            </section>
+    <div class="header-block header-clock">
+        <span id="clock">00:00:00</span>
+    </div>
 
-            <footer class="screen-footer">
-                <span>91_CRT_SCREEN_SUBIMINAL</span>
-                <span id="clock">00:00:00</span>
-                <span>3x0c3t_L4B</span>
-            </footer>
+    <div class="header-block header-lab">
+        <span>3x0c3t_L4B</span>
+    </div>
 
-        </section>
+</header>
 
-    </main>
+<section class="crt-content">
 
-    <script src="index.js"></script>
+    <div class="signal-frame">
+        <div class="signal-line signal-line-1"></div>
+        <div class="signal-line signal-line-2"></div>
+        <div class="signal-line signal-line-3"></div>
+    </div>
+
+    <div id="main-message" class="main-message">
+        <span>INITIALIZING</span>
+    </div>
+
+    <div id="sub-message" class="sub-message">
+        DIGITAL SIGNAL ACTIVE
+    </div>
+
+</section>
+```
+
+</main>
+
+<script src="index.js"></script>
+
 </body>
 </html>
